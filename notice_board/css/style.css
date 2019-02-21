@@ -1,0 +1,95 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    height: 0.8rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 99;
+    background-color: #12ae3f;
+    /* filter: alpha(opacity=85);
+    opacity: 0.85; */
+}
+
+.menu .nav {
+    height: 0.8rem;
+    font-size: 0.32rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu .nav>li {
+    margin-bottom: 0.01rem;
+    float: left;
+    text-align: center;
+    padding: 0 .2rem;
+    list-style: none;
+}
+
+.menu .nav li a {
+    line-height: 0.8rem;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: #424242;
+}
+
+.menu .nav>li.active {
+    background-color: #33333336;
+}
+
+.menu .nav>li.active a {
+    color: #fff;
+}
+
+.menu .nav li:hover {
+    background-color: #33333336;
+}
+
+.menu .nav li:hover>a {
+    color: #fff;
+    transform: translateX(0px);
+    transition: all .5s ease 0s;
+}
+
+.menu .nav li>ul {
+    display: none;
+    position: absolute;
+    bottom: .8rem;
+    margin-top: 0px;
+    z-index: 999;
+    margin-left: -12px;
+}
+
+.menu .nav li:hover>ul {
+    display: block;
+    background-color: #12ae3f;
+    /* filter: alpha(opacity=95);
+    opacity: 0.95; */
+    margin-left: -16px;
+    padding: 0;
+}
+
+.menu .nav li>ul>li {
+    float: left;
+    list-style: none;
+    margin: 2px;
+    border: 1px solid #ffffff2e;
+}
+
+.menu .nav li>ul>li>a {
+    line-height: 0.46rem;
+    color: #424242;
+    text-align: center;
+    display: block;
+    border-top: none;
+    padding: 2px 12px;
+    font-size: 0.28rem;
+}
+
+.menu .nav li>ul.left {
+    left: 14%;
+}
