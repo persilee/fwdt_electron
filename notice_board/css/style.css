@@ -34,7 +34,7 @@
     letter-spacing: 2px;
     text-align: center;
     text-decoration: none;
-    color: #424242;
+    color: #000000;
 }
 
 .menu .nav>li.active {
@@ -82,7 +82,7 @@
 
 .menu .nav li>ul>li>a {
     line-height: 0.46rem;
-    color: #424242;
+    color: #000000;
     text-align: center;
     display: block;
     border-top: none;

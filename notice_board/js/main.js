@@ -1,6 +1,6 @@
 var lastTime = new Date().getTime();
 var currentTime = new Date().getTime();
-var timeOut = 1 * 60 * 1000; //设置超时时间： 10分
+var timeOut = 10 * 60 * 1000; //设置超时时间： 10分
 
 window.onload = function () {
     document.onmousemove = function () {
@@ -10,9 +10,8 @@ window.onload = function () {
 
 function testTime() {
     currentTime = new Date().getTime(); //更新当前时间
-    if (currentTime - lastTime > timeOut) { //判断是否超时
-        console.log('timeOut');
-        // window.location.href = '../index.html';
+    if (currentTime - lastTime > timeOut && !window.location.href.includes('notice_board/index.html')) { //判断是否超时
+        window.location.href = '../index.html';
     }
 }
 

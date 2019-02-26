@@ -8,7 +8,7 @@ let win
 
 const createWindow = () => {
     win = new BrowserWindow({
-        fullscreen : true,
+        // fullscreen : true,
         skipTaskbar: true,
         show: false,
         alwaysOnTop: true,
