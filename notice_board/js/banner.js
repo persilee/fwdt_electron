@@ -21,13 +21,13 @@
             if (timer) clearInterval(timer);
         };
         main.onmouseout = function () {
-            timer = setInterval(function () {
-                index++;
-                if (index >= len) {
-                    index = 0;
-                }
-                changeImg();
-            }, 3000);
+            // timer = setInterval(function () {
+            //     index++;
+            //     if (index >= len) {
+            //         index = 0;
+            //     }
+            //     changeImg();
+            // }, 3000);
         };
         //自动触发
         main.onmouseout();
@@ -83,7 +83,6 @@
     });
     //当手指抬起的时候，判断图片滚动离左右的距离，当
     main.addEventListener("touchend", function (e) {
-        console.log(left)
         if (left < -6) {
             index--;
             if (index < 0) index = len - 1;
