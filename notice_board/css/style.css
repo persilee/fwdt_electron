@@ -1,3 +1,10 @@
+html {
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .menu {
     display: flex;
     justify-content: center;

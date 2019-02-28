@@ -2,19 +2,17 @@ html,
 body,
 .wrapper {
     font-family: Helvetica,
-    Tahoma,
-    Arial,
-    "PingFang SC",
-    "Hiragino Sans GB",
-    "Heiti SC",
-    "Microsoft YaHei",
-    "WenQuanYi Micro Hei",
-    sans-serif;
-    text-shadow:0 0 1.5px #ccc !important;
+        Tahoma,
+        Arial,
+        "PingFang SC",
+        "Hiragino Sans GB",
+        "Heiti SC",
+        "Microsoft YaHei",
+        "WenQuanYi Micro Hei",
+        sans-serif;
+    text-shadow: 0 0 1.5px #ccc !important;
     font-weight: bold;
     height: auto;
-    background-color: #ccc;
-    background-color: #f8f8f8;
     letter-spacing: 2px;
 }
 
@@ -63,7 +61,7 @@ body,
 
 .content-box .container .content .image-box .description {
     font-size: .2rem;
-    color: #9E9E9E;
+    color: #424242;
     text-align: center;
 }
 
@@ -92,6 +90,10 @@ body,
     left: 14%;
 }
 
+.menu .nav li>ul.right {
+    right: 16%;
+}
+
 .content-box .container .other-box {
     text-align: center;
 }
@@ -102,7 +104,7 @@ body,
     text-align: center;
 }
 
-.content-box .container .content table th{
+.content-box .container .content table th {
     height: .78rem;
 }
 
