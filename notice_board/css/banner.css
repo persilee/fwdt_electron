@@ -25,6 +25,9 @@ body,
     background-repeat: no-repeat;
     position: absolute;
     display: none;
+    transition:all 1.5s;
+    /*设置子元素在3D空间中呈现*/
+    transform-style:preserve-3d;
 }
 
 .slide1 {

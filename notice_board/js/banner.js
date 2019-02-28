@@ -21,13 +21,13 @@
             if (timer) clearInterval(timer);
         };
         main.onmouseout = function () {
-            // timer = setInterval(function () {
-            //     index++;
-            //     if (index >= len) {
-            //         index = 0;
-            //     }
-            //     changeImg();
-            // }, 3000);
+            timer = setInterval(function () {
+                index++;
+                if (index >= len) {
+                    index = 0;
+                }
+                changeImg();
+            }, 6000);
         };
         //自动触发
         main.onmouseout();
