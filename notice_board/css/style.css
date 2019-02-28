@@ -48,7 +48,11 @@ html {
     background-color: #33333336;
 }
 
-.menu .nav>li.active a {
+.menu .nav>li.active>a {
+    color: #fff;
+}
+
+.menu .nav>li.active>ul>li.active a {
     color: #fff;
 }
 
