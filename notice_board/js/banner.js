@@ -18,19 +18,28 @@
 
         main.onmouseover = function () {
             //清除定时器
-            if (timer) clearInterval(timer);
+            // if (timer) clearInterval(timer);
         };
-        main.onmouseout = function () {
-            timer = setInterval(function () {
-                index++;
-                if (index >= len) {
-                    index = 0;
-                }
-                changeImg();
-            }, 6000);
-        };
-        //自动触发
-        main.onmouseout();
+        // main.onmouseout = function () {
+        //     timer = setInterval(function () {
+        //         index++;
+        //         if (index >= len) {
+        //             index = 0;
+        //         }
+        //         changeImg();
+        //     }, 6000);
+        // };
+        // //自动触发
+        // main.onmouseout();
+
+        timer = setInterval(function () {
+            index++;
+            if (index >= len) {
+                index = 0;
+            }
+            changeImg();
+        }, 6000);
+
         //遍历   绑定事件    点击圆点切换图片
         for (var d = 0; d < len; d++) {
             dots[d].id = d;
