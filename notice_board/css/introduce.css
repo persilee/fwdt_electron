@@ -10,6 +10,8 @@ body,
         "Microsoft YaHei",
         "WenQuanYi Micro Hei",
         sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
     text-shadow: 0 0 1.5px #ccc !important;
     font-weight: bold;
     height: auto;
